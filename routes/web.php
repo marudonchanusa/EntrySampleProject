@@ -12,9 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('sample');
 });
 
+Route::get('/list', function () {
+    return view('entry');
+});
+
+/*
 Route::get('/helo', 'HeloController@getIndex');
 
 Route::group(['as' => 'form::'], function() {
@@ -25,3 +30,5 @@ Route::group(['as' => 'form::'], function() {
     // 完了画面
     Route::post('/save', ['as' => 'save', 'uses' => 'FormController@save']);
 });
+*/
+?>
