@@ -6,29 +6,43 @@
       app
       v-model="navBar"
     >
-        <v-list dense class="pt-0">
-          <router-link to="/">
-            <v-list-tile>
-              <v-list-tile-action>
-                <v-icon>dashboard</v-icon>
-              </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-title>DASHBOARD</v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-          </router-link>
-          <router-link to="/setting">
-            <v-list-tile>
-              <v-list-tile-action>
-                <v-icon>settings</v-icon>
-              </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-title>SETTING</v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-          </router-link>
-        </v-list>
-      </v-navigation-drawer>
+      <v-list dense class="pt-0">
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>dashboard</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>ダッシュボード</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-group>
+          <v-list-tile slot="activator">
+            <v-list-tile-action>
+              <v-icon>settings</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>設定</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action>
+              <v-icon></v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>部署</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action>
+              <v-icon></v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>社員</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list-group>
+      </v-list>
+    </v-navigation-drawer>
     <v-toolbar
       dark
       color="primary"
